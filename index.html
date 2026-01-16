@@ -3,39 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de [SEZER Boran]</title>
+    <title>Portfolio de SEZER Boran</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; background-color: #f4f4f9; color: #333; }
-        header { background: #2c3e50; color: white; padding: 2rem; text-align: center; border-radius: 10px; }
-        .projet { background: white; padding: 20px; margin-top: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .btn { display: inline-block; background: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 10px; }
-        .btn:hover { background: #2980b9; }
-        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; background-color: #f4f4f9; color: #333; }
+        header { background: #2c3e50; color: white; padding: 2.5rem; text-align: center; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .projet { background: white; padding: 25px; margin-top: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #3498db; }
+        .btn { display: inline-block; background: #3498db; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 15px; transition: 0.3s; }
+        .btn:hover { background: #2980b9; transform: translateY(-2px); }
+        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 8px; margin-top: 0; }
+        .tech-tags { font-size: 0.9em; color: #7f8c8d; font-style: italic; margin-top: 10px; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Portfolio de [SEZER Boran] 👨‍💻</h1>
-    <p>Futur étudiant en BUT Informatique</p>
+    <h1>Portfolio de SEZER Boran 👨‍💻</h1>
+    <p>Passionné de programmation | Futur étudiant en BUT Informatique</p>
 </header>
 
 <section class="projet">
-    <h2>🎮 Projet : Jeu du Juste Nombre</h2>
-    <p>J'ai réalisé ce jeu en <strong>langage C</strong> en utilisant <strong>VS Code</strong>. 
-    Ce projet m'a permis d'apprendre à manipuler les boucles, les conditions et les entrées utilisateur.</p>
+    <h2>🥢 Projet : Jeu de Nim (Bâtonnets)</h2>
+    <p>Développement d'un jeu de stratégie en <strong>langage C</strong> où l'utilisateur affronte une <strong>Intelligence Artificielle</strong>. Le programme gère les règles du jeu, les tours et une boucle permettant de rejouer.</p>
     
-    <p><strong>Détails techniques :</strong> Compilation avec GCC, gestion du hasard avec <code>stdlib.h</code>.</p>
+    <p class="tech-tags"><strong>Techniques :</strong> Algorithme mathématique (Modulo), boucles complexes, gestion des entrées/sorties.</p>
+
+    <a href="https://github.com/bobobossssssrg/jeu-de-nim-c" target="_blank" class="btn">
+        Voir le code du Jeu de Nim 🚀
+    </a>
+</section>
+
+<section class="projet">
+    <h2>🎮 Projet : Jeu du Juste Nombre</h2>
+    <p>Réalisation d'un classique de la programmation en C. Ce projet m'a permis de maîtriser la gestion du hasard et la structure logique d'un programme interactif.</p>
+    
+    <p class="tech-tags"><strong>Techniques :</strong> Bibliothèques <code>stdlib.h</code> et <code>time.h</code>, conditions imbriquées.</p>
 
     <a href="https://github.com/bobobossssssrg/jeu-du-juste-nombre-c" target="_blank" class="btn">
-        Consulter le code sur GitHub 🚀
+        Voir le code du Juste Nombre 🚀
     </a>
 </section>
 
 <section class="projet">
     <h2>🤖 Projet : Robot Télécommandé (À venir)</h2>
-    <p>Actuellement en phase de réflexion sur la partie électronique et motorisation.</p>
+    <p>Actuellement en phase de conception. Ce projet liera programmation bas niveau et électronique (Arduino/ESP32).</p>
 </section>
 
-</body>
+<footer style="text-align: center; margin-top: 40px; color: #bdc3c7;">
+    <p>&copy; 2026 - SEZER Boran</p>
+</footer>
+
+</body> 
 </html>
