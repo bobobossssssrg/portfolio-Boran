@@ -3,54 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de SEZER Boran</title>
+    <title>Boran Sezer - Portfolio</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; background-color: #f4f4f9; color: #333; }
-        header { background: #2c3e50; color: white; padding: 2.5rem; text-align: center; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-        .projet { background: white; padding: 25px; margin-top: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #3498db; }
-        .btn { display: inline-block; background: #3498db; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 15px; transition: 0.3s; }
-        .btn:hover { background: #2980b9; transform: translateY(-2px); }
-        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 8px; margin-top: 0; }
-        .tech-tags { font-size: 0.9em; color: #7f8c8d; font-style: italic; margin-top: 10px; }
+        /* Style plus simple et moderne */
+        body { font-family: 'Helvetica', 'Arial', sans-serif; color: #222; margin: 0; padding: 40px; background: #fff; }
+        .container { max-width: 700px; margin: auto; }
+        
+        header { margin-bottom: 50px; }
+        h1 { font-size: 2.5em; margin-bottom: 5px; }
+        .subtitle { color: #666; font-size: 1.2em; }
+
+        .section-title { border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 40px; }
+        
+        .projet { margin-bottom: 30px; }
+        .projet h3 { margin-bottom: 5px; color: #000; }
+        .projet p { margin-top: 5px; color: #444; }
+        
+        .link { color: #007bff; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+        .link:hover { text-decoration: underline; }
+
+        .tag { background: #f0f0f0; padding: 3px 8px; border-radius: 4px; font-size: 0.8em; color: #555; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Portfolio de SEZER Boran 👨‍💻</h1>
-    <p>Passionné de programmation | Futur étudiant en BUT Informatique</p>
-</header>
+<div class="container">
+    <header>
+        <h1>Boran Sezer</h1>
+        <p class="subtitle">Étudiant passionné par le code et l'informatique</p>
+    </header>
 
-<section class="projet">
-    <h2>🥢 Projet : Jeu de Nim (Bâtonnets)</h2>
-    <p>Développement d'un jeu de stratégie en <strong>langage C</strong> où l'utilisateur affronte une <strong>Intelligence Artificielle</strong>. Le programme gère les règles du jeu, les tours et une boucle permettant de rejouer.</p>
-    
-    <p class="tech-tags"><strong>Techniques :</strong> Algorithme mathématique (Modulo), boucles complexes, gestion des entrées/sorties.</p>
+    <h2 class="section-title">Mes Projets</h2>
 
-    <a href="https://github.com/bobobossssssrg/jeu-de-nim-c" target="_blank" class="btn">
-        Voir le code du Jeu de Nim 🚀
-    </a>
-</section>
+    <div class="projet">
+        <h3>Jeu de Nim (Bâtonnets)</h3>
+        <span class="tag">Langage C</span> <span class="tag">Algorithme</span>
+        <p>J'ai codé ce jeu où l'on affronte l'ordinateur. Le but est de ne pas prendre le dernier bâtonnet. J'ai ajouté une boucle pour pouvoir rejouer facilement et une logique pour que l'ordinateur joue intelligemment.</p>
+        <a href="https://github.com/bobobossssssrg/jeu-de-nim-c" class="link" target="_blank">Voir sur GitHub →</a>
+    </div>
 
-<section class="projet">
-    <h2>🎮 Projet : Jeu du Juste Nombre</h2>
-    <p>Réalisation d'un classique de la programmation en C. Ce projet m'a permis de maîtriser la gestion du hasard et la structure logique d'un programme interactif.</p>
-    
-    <p class="tech-tags"><strong>Techniques :</strong> Bibliothèques <code>stdlib.h</code> et <code>time.h</code>, conditions imbriquées.</p>
+    <div class="projet">
+        <h3>Jeu du Juste Nombre</h3>
+        <span class="tag">Langage C</span> <span class="tag">Logique</span>
+        <p>Un de mes premiers projets en C. C'est un programme qui génère un nombre aléatoire et qui nous guide (plus grand / plus petit) pour le trouver.</p>
+        <a href="https://github.com/bobobossssssrg/jeu-du-juste-nombre-c" class="link" target="_blank">Voir sur GitHub →</a>
+    </div>
 
-    <a href="https://github.com/bobobossssssrg/jeu-du-juste-nombre-c" target="_blank" class="btn">
-        Voir le code du Juste Nombre 🚀
-    </a>
-</section>
+    <div class="projet">
+        <h3>Projet Robotique</h3>
+        <span class="tag">En cours</span>
+        <p>Je travaille actuellement sur l'idée d'un robot télécommandé. Je m'intéresse à l'électronique et à la programmation de cartes de type Arduino.</p>
+    </div>
 
-<section class="projet">
-    <h2>🤖 Projet : Robot Télécommandé (À venir)</h2>
-    <p>Actuellement en phase de conception. Ce projet liera programmation bas niveau et électronique (Arduino/ESP32).</p>
-</section>
+    <h2 class="section-title">À propos</h2>
+    <p>Je m'entraîne sur VS Code pour apprendre les bases du développement. Je souhaite intégrer un BUT Informatique pour me perfectionner et travailler plus tard dans ce domaine.</p>
 
-<footer style="text-align: center; margin-top: 40px; color: #bdc3c7;">
-    <p>&copy; 2026 - SEZER Boran</p>
-</footer>
+</div>
+
+</body>
+</html>
 
 </body> 
 </html>
