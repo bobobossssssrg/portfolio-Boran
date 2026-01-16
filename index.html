@@ -3,26 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boran Sezer - Portfolio</title>
+    <title>Boran Sezer | Portfolio</title>
     <style>
-        /* Style plus simple et moderne */
-        body { font-family: 'Helvetica', 'Arial', sans-serif; color: #222; margin: 0; padding: 40px; background: #fff; }
-        .container { max-width: 700px; margin: auto; }
-        
-        header { margin-bottom: 50px; }
-        h1 { font-size: 2.5em; margin-bottom: 5px; }
-        .subtitle { color: #666; font-size: 1.2em; }
+        :root {
+            --primary: #4a90e2;
+            --dark: #2c3e50;
+            --bg: #f8f9fa;
+        }
 
-        .section-title { border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 40px; }
-        
-        .projet { margin-bottom: 30px; }
-        .projet h3 { margin-bottom: 5px; color: #000; }
-        .projet p { margin-top: 5px; color: #444; }
-        
-        .link { color: #007bff; text-decoration: none; font-weight: bold; font-size: 0.9em; }
-        .link:hover { text-decoration: underline; }
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            background-color: var(--bg); 
+            color: #333; 
+            margin: 0; 
+            padding: 0;
+        }
 
-        .tag { background: #f0f0f0; padding: 3px 8px; border-radius: 4px; font-size: 0.8em; color: #555; }
+        .container { max-width: 850px; margin: 40px auto; padding: 20px; }
+
+        header { 
+            text-align: center; 
+            padding: 60px 20px; 
+            background: white; 
+            border-radius: 20px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        h1 { margin: 0; color: var(--dark); font-size: 2.5em; }
+        .subtitle { color: var(--primary); font-weight: 600; font-size: 1.1em; margin-top: 10px; }
+
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        
+        .card { 
+            background: white; 
+            padding: 25px; 
+            border-radius: 15px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        h3 { margin-top: 0; color: var(--dark); font-size: 1.3em; }
+        
+        .badge {
+            display: inline-block;
+            background: #e1f0ff;
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .btn-link {
+            margin-top: 20px;
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .about {
+            margin-top: 50px;
+            padding: 30px;
+            background: var(--dark);
+            color: white;
+            border-radius: 20px;
+        }
+
+        @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -30,34 +87,34 @@
 <div class="container">
     <header>
         <h1>Boran Sezer</h1>
-        <p class="subtitle">Étudiant passionné par le code et l'informatique</p>
+        <div class="subtitle">Futur étudiant en BUT Informatique</div>
+        <p>Bienvenue sur mon portfolio. Je présente ici mes premiers projets de programmation réalisés en autodidacte.</p>
     </header>
 
-    <h2 class="section-title">Mes Projets</h2>
+    <div class="grid">
+        <div class="card">
+            <div>
+                <span class="badge">JEU C</span>
+                <h3>Jeu de Nim</h3>
+                <p>Un jeu de stratégie contre l'ordinateur. Développé en C avec une logique d'IA pour rendre les parties stimulantes.</p>
+            </div>
+            <a href="https://github.com/bobobossssssrg/jeu-de-nim-c" class="btn-link" target="_blank">Voir le projet →</a>
+        </div>
 
-    <div class="projet">
-        <h3>Jeu de Nim (Bâtonnets)</h3>
-        <span class="tag">Langage C</span> <span class="tag">Algorithme</span>
-        <p>J'ai codé ce jeu où l'on affronte l'ordinateur. Le but est de ne pas prendre le dernier bâtonnet. J'ai ajouté une boucle pour pouvoir rejouer facilement et une logique pour que l'ordinateur joue intelligemment.</p>
-        <a href="https://github.com/bobobossssssrg/jeu-de-nim-c" class="link" target="_blank">Voir sur GitHub →</a>
+        <div class="card">
+            <div>
+                <span class="badge">JEU C</span>
+                <h3>Juste Nombre</h3>
+                <p>Mon premier projet concret : un jeu interactif utilisant la gestion du hasard et des boucles de contrôle.</p>
+            </div>
+            <a href="https://github.com/bobobossssssrg/jeu-du-juste-nombre-c" class="btn-link" target="_blank">Voir le projet →</a>
+        </div>
     </div>
 
-    <div class="projet">
-        <h3>Jeu du Juste Nombre</h3>
-        <span class="tag">Langage C</span> <span class="tag">Logique</span>
-        <p>Un de mes premiers projets en C. C'est un programme qui génère un nombre aléatoire et qui nous guide (plus grand / plus petit) pour le trouver.</p>
-        <a href="https://github.com/bobobossssssrg/jeu-du-juste-nombre-c" class="link" target="_blank">Voir sur GitHub →</a>
+    <div class="about">
+        <h2 style="margin-top:0">À propos de moi</h2>
+        <p>Actuellement en train d'apprendre le langage C sur VS Code, je m'intéresse de près au développement logiciel et à la robotique. Mon objectif est d'intégrer un BUT Informatique pour approfondir mes connaissances techniques.</p>
     </div>
-
-    <div class="projet">
-        <h3>Projet Robotique</h3>
-        <span class="tag">En cours</span>
-        <p>Je travaille actuellement sur l'idée d'un robot télécommandé. Je m'intéresse à l'électronique et à la programmation de cartes de type Arduino.</p>
-    </div>
-
-    <h2 class="section-title">À propos</h2>
-    <p>Je m'entraîne sur VS Code pour apprendre les bases du développement. Je souhaite intégrer un BUT Informatique pour me perfectionner et travailler plus tard dans ce domaine.</p>
-
 </div>
 
 </body>
